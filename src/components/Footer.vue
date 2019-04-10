@@ -46,7 +46,7 @@
 			</div>
 	
 			<div id="go-top">
-				<a class="smoothscroll" title="Back to Top" href="#home">
+				<a class="smoothscroll" title="Back to Top" href="#about">
 					<i class="fa fa-chevron-up"></i>
 				</a>
 			</div>

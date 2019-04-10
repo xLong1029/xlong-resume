@@ -11,34 +11,24 @@
 		</div>
 	
 		<ul id="nav" class="nav">
-			<li class="current">
-				<a class="smoothscroll" href="#home">
-					<i class="fa fa-home fa-fw"></i>Home
-				</a>
-			</li>
 			<li>
 				<a class="smoothscroll" href="#about">
-					<i class="fa fa-user fa-fw"></i>About Me
+					<i class="fa fa-user fa-fw"></i>个人介绍
 				</a>
 			</li>
 			<li>
 				<a class="smoothscroll" href="#resume">
-					<i class="fa fa-file-text fa-fw"></i>Resume
+					<i class="fa fa-file-text fa-fw"></i>简历详情
 				</a>
 			</li>
 			<li>
 				<a class="smoothscroll" href="#portfolio">
-					<i class="fa fa-briefcase fa-fw"></i>Portfolio
-				</a>
-			</li>
-			<li>
-				<a class="smoothscroll" href="#testimonials">
-					<i class="fa fa-comments fa-fw"></i>Testimonials
+					<i class="fa fa-briefcase fa-fw"></i>作品集
 				</a>
 			</li>
 			<li>
 				<a class="smoothscroll" href="#contact">
-					<i class="fa fa-envelope fa-fw"></i>Contact
+					<i class="fa fa-envelope fa-fw"></i>联系方式
 				</a>
 			</li>
 		</ul>
@@ -79,7 +69,7 @@
 		li {
 			position: relative;
 			list-style: none;
-			height: 42px;
+			// height: 42px;
 			display: block;
 			padding-left: 20px;
 			border-left: 2px solid transparent;

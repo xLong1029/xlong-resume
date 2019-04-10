@@ -1,11 +1,11 @@
 <template>
 	<section id="resume">
-		<h1 class="section-title wow fadeInDown">Resume</h1>
+		<h1 class="section-title wow fadeInDown">简历详情 / Resume</h1>
 		<!-- Work -->
 		<div class="row work">
 			<div class="three columns header-col">
 				<h2>
-					<span>Employment</span>
+					<span>工作经验</span>
 				</h2>
 			</div>
 	
@@ -57,7 +57,7 @@
 		<div class="row skill">
 			<div class="three columns header-col">
 				<h2>
-					<span>Skills</span>
+					<span>技能熟练度</span>
 				</h2>
 			</div>
 	
@@ -69,18 +69,6 @@
 				<div class="bars">
 					<ul class="skills">
 						<li>
-							<span class="bar-expand photoshop wow fadeInLeft"></span>
-							<em>Photoshop</em>
-						</li>
-						<li>
-							<span class="bar-expand illustrator wow fadeInLeft"></span>
-							<em>Illustrator</em>
-						</li>
-						<li>
-							<span class="bar-expand wordpress wow fadeInLeft"></span>
-							<em>Wordpress</em>
-						</li>
-						<li>
 							<span class="bar-expand css wow fadeInLeft"></span>
 							<em>CSS</em>
 						</li>
@@ -90,8 +78,20 @@
 						</li>
 						<li>
 							<span class="bar-expand jquery wow fadeInLeft"></span>
-							<em>jQuery</em>
+							<em>JavaScript / jQuery</em>
 						</li>
+						<li>
+							<span class="bar-expand vuejs wow fadeInLeft"></span>
+							<em>Vue</em>
+						</li>
+						<li>
+							<span class="bar-expand eggjs wow fadeInLeft"></span>
+							<em>Egg</em>
+						</li>
+						<!-- <li>
+							<span class="bar-expand wordpress wow fadeInLeft"></span>
+							<em>Wordpress</em>
+						</li> -->
 					</ul>
 				</div>
 				<!-- end skill-bars -->
@@ -117,32 +117,32 @@
 					<ul>
 						<li class="wow fadeIn">
 							<span>
-						                <i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
-						              </span>
+							<i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
+							</span>
 							<h3>App Development Contest</h3>
 							<h5>Winner</h5>
 							<h4>Dhaka, Bangladesh</h4>
 						</li>
 						<li class="wow fadeIn">
 							<span>
-						                <i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
-						              </span>
+							<i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
+							</span>
 							<h3>Best Front-End Developers Award</h3>
 							<h5>Top Front-End Developer</h5>
 							<h4>San Fransisco, USA</h4>
 						</li>
 						<li class="wow fadeIn">
 							<span>
-						                <i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
-						              </span>
+							<i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
+							</span>
 							<h3>Awesome UI/UX Designers Award</h3>
 							<h5>Best UI/UX Designer</h5>
 							<h4>New York, USA</h4>
 						</li>
 						<li class="wow fadeIn">
 							<span>
-						                <i class="fa fa-microphone fa-5x pull-left fa-fw"></i>
-						              </span>
+							<i class="fa fa-microphone fa-5x pull-left fa-fw"></i>
+							</span>
 							<h3>UX Conference</h3>
 							<h5>Speaker</h5>
 							<h4>Dhaka, Bangladesh</h4>
@@ -229,9 +229,8 @@
 		padding-bottom: 24px;
 		border-bottom: 1px solid #e8e8e8;
 	}
-
-	// timeline
 	
+	// timeline
 	.timeline {
 		margin: 15px auto;
 		position: relative;
@@ -301,7 +300,7 @@
 		}
 	}
 	
-	.timeline-event-copy .timeline-event-icon {
+	.timeline-event-icon {
 		-moz-transition: -moz-transform 0.2s ease-in;
 		-o-transition: -o-transform 0.2s ease-in;
 		-webkit-transition: -webkit-transform 0.2s ease-in;
@@ -341,9 +340,8 @@
 		padding: 8px 15px;
 		transition: box-shadow 0.5s ease-in 0.1s;
 	}
-
-	// skill
 	
+	// skill
 	.bars {
 		width: 95%;
 		float: left;
@@ -366,35 +364,36 @@
 				letter-spacing: 2px;
 				padding-left: 20px;
 				position: relative;
-				text-transform: uppercase;
+				// text-transform: uppercase;
 			}
 		}
-		&-expand {
-			position: absolute;
-			left: 0;
-			top: 0;
-			margin: 0;
-			padding-right: 24px;
-			background: #34495e;
-			display: inline-block;
-			height: 42px;
-			line-height: 42px;
-			border-radius: 3px 0 0 3px;
-		}
 	}
 	
-	.photoshop {
-		background: #1abc9c;
-		width: 60%;
-		-moz-animation: photoshop 2s ease;
-		-webkit-animation: photoshop 2s ease;
+	.bar-expand {
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 0;
+		padding-right: 24px;
+		background: #34495e;
+		display: inline-block;
+		height: 42px;
+		line-height: 42px;
+		border-radius: 3px 0 0 3px;
 	}
 	
-	.illustrator {
-		background: #e74c3c;
-		width: 55%;
-		-moz-animation: illustrator 2s ease;
-		-webkit-animation: illustrator 2s ease;
+	.vuejs {
+		background: #3498db;
+		width: 85%;
+		-moz-animation: vuejs 2s ease;
+		-webkit-animation: vuejs 2s ease;
+	}
+	
+	.eggjs {
+		background: #d35400;
+		width: 75%;
+		-moz-animation: eggjs 2s ease;
+		-webkit-animation: eggjs 2s ease;
 	}
 	
 	.wordpress {
@@ -404,46 +403,73 @@
 		-webkit-animation: wordpress 2s ease;
 	}
 	
-	.css {
-		background: #3498db;
-		width: 90%;
+	.css {		
+		background: #1abc9c;
+		width: 95%;
 		-moz-animation: css 2s ease;
 		-webkit-animation: css 2s ease;
 	}
 	
 	.html5 {
-		background: #d35400;
-		width: 80%;
+		background: #e74c3c;
+		width: 95%;
 		-moz-animation: html5 2s ease;
 		-webkit-animation: html5 2s ease;
 	}
 	
 	.jquery {
 		background: #9b59b6;
-		width: 50%;
+		width: 90%;
 		-moz-animation: jquery 2s ease;
 		-webkit-animation: jquery 2s ease;
 	}
 	
-	@-moz-keyframes photoshop {
+	@-moz-keyframes vuejs {
 		0% {
 			width: 0px;
 		}
 		100% {
-			width: 60%;
+			width: 85%;
+		}
+	}
+
+	@-webkit-keyframes vuejs {
+		0% {
+			width: 0px;
+		}
+		100% {
+			width: 85%;
 		}
 	}
 	
-	@-moz-keyframes illustrator {
+	@-moz-keyframes eggjs {
 		0% {
 			width: 0px;
 		}
 		100% {
-			width: 55%;
+			width: 75%;
+		}
+	}
+
+	@-webkit-keyframes eggjs {
+		0% {
+			width: 0px;
+		}
+		100% {
+			width: 75%;
 		}
 	}
 	
 	@-moz-keyframes wordpress {
+		0% {
+			width: 0px;
+		}
+		100% {
+			width: 50%;
+		}
+	}
+
+	@-webkit-keyframes wordpress {
 		0% {
 			width: 0px;
 		}
@@ -457,7 +483,16 @@
 			width: 0px;
 		}
 		100% {
-			width: 90%;
+			width: 95%;
+		}
+	}
+
+	@-webkit-keyframes css {
+		0% {
+			width: 0px;
+		}
+		100% {
+			width: 95%;
 		}
 	}
 	
@@ -466,7 +501,16 @@
 			width: 0px;
 		}
 		100% {
-			width: 80%;
+			width: 95%;
+		}
+	}
+
+	@-webkit-keyframes html5 {
+		0% {
+			width: 0px;
+		}
+		100% {
+			width: 95%;
 		}
 	}
 	
@@ -475,38 +519,11 @@
 			width: 0px;
 		}
 		100% {
-			width: 50%;
+			width: 90%;
 		}
-	}
+	}	
 	
-	@-webkit-keyframes photoshop {
-		0% {
-			width: 0px;
-		}
-		100% {
-			width: 60%;
-		}
-	}
-	
-	@-webkit-keyframes illustrator {
-		0% {
-			width: 0px;
-		}
-		100% {
-			width: 55%;
-		}
-	}
-	
-	@-webkit-keyframes wordpress {
-		0% {
-			width: 0px;
-		}
-		100% {
-			width: 50%;
-		}
-	}
-	
-	@-webkit-keyframes css {
+	@-webkit-keyframes jquery {
 		0% {
 			width: 0px;
 		}
@@ -515,40 +532,18 @@
 		}
 	}
 	
-	@-webkit-keyframes html5 {
-		0% {
-			width: 0px;
-		}
-		100% {
-			width: 80%;
-		}
-	}
-	
-	@-webkit-keyframes jquery {
-		0% {
-			width: 0px;
-		}
-		100% {
-			width: 50%;
-		}
-	}
-
 	// award
-	
 	.award-list ul li {
 		margin-bottom: 30px;
 		display: block;
-
 		h3 {
 			font-size: 18px !important;
 			margin-bottom: 5px;
 		}
-
 		h4 {
 			color: #666;
 			font-size: 16px !important;
 		}
-
 		h5 {
 			color: #888;
 			font-family: "Raleway", sans-serif;

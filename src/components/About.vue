@@ -1,15 +1,31 @@
 <template>
-	<!-- About Section -->
 	<section id="about">
 		<div class="row bio-container">
 			<div class="twelve columns bio-inner">
 				<div class="six columns bio-left">
 					<div class="pp-container">
 						<img class="profile-pic wow zoomIn" :src="avatar">
-						<h2>John Doe</h2>
-						<h3>UI/UX Developer</h3>
+						<h2>罗永梅</h2>
+						<p>前端开发工程师 / 设计爱好者</p>
 					</div>
-					<!-- Profile Picture -->
+					<!-- Social Section -->
+					<div id="social">
+						<div class="row social-container">
+							<ul class="social">
+								<li>
+									<a href="http://wpa.qq.com/msgrd?v=3&uin=381612175&site=qq&menu=yes">
+										<i class="fa fa-qq" style="font-size: 26px;"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/xLong1029" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Social End -->
 				</div>
 	
 				<div class="six columns main-col wow fadeIn">
@@ -25,10 +41,10 @@
 						<div class="six columns download">
 							<p>
 								<a href="#contact" class="button">
-									<i class="fa fa-paper-plane"></i>Hire Me
+									<i class="fa fa-phone"></i>与我联系
 								</a>
 								<a href="resume.pdf" class="button" target="_blank">
-									<i class="fa fa-download"></i>Download Resume
+									<i class="fa fa-download"></i>下载纸质简历
 								</a>
 							</p>
 						</div>
@@ -38,51 +54,7 @@
 				<!-- end .main-col -->
 			</div>
 		</div>
-		<!-- Social Section -->
-		<div id="social">
-			<div class="row social-container">
-				<ul class="social">
-					<li>
-						<a href="#">
-							<i class="fa fa-facebook"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-google-plus"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-linkedin"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-github"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-dribbble"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-skype"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- Social End -->
 	</section>
-	<!-- About Section End-->
 </template>
 
 <script>
@@ -225,8 +197,8 @@
 	}
 	
 	#social {
-		background: rgba(0, 0, 0, .4);
-		position: absolute;
+		// background: rgba(0, 0, 0, 1);
+		// position: absolute;
 		bottom: 0;
 		left: 0;
 		width: 100%;
@@ -242,7 +214,7 @@
 		width: 85%;
 		text-align: center;
 		.social {
-			margin: 24px 0;
+			// margin: 24px 0;
 			padding: 0;
 			font-size: 30px;
 			text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
