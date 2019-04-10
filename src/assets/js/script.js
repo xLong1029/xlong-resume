@@ -47,11 +47,10 @@
    $('.smoothscroll').on('click',function (e) {
 	    e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
+	    var target = this.hash;
 
 	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
+	        'scrollTop': 0
 	    }, 800, 'swing', function () {
 	        window.location.hash = target;
 	    });
@@ -63,19 +62,6 @@
 /* Appear Animation
 ------------------------------------------------------*/
   new WOW().init();
-
-/*----------------------------------------------------*/
-/* Parallax for Header Content
-------------------------------------------------------*/
-$(window).scroll(function(e){
-  parallax();
-});
-
-
-function parallax() {
-  var scrollPosition = $(window).scrollTop();
-  $('.banner').css('margin-top', (0 - (scrollPosition * .8)) + 'px');
-}
 
 /*----------------------------------------------------*/
 /* Highlight the current section in the navigation bar
@@ -109,26 +95,9 @@ function parallax() {
 /* equal to the browser height.
 ------------------------------------------------------ */
 
-   $('header').css({ 'height': $(window).height() });
    $(window).on('resize', function() {
-
-        $('header').css({ 'height': $(window).height() });
         $('body').css({ 'width': $(window).width() })
    });
-
-
-/*----------------------------------------------------*/
-/*  On scroll blur header
-------------------------------------------------------*/
-   (function() {
-      $(window).scroll(function() {
-        var oVal;
-        oVal = $(window).scrollTop() / 100;
-        return $(".header-overlay").css("opacity", oVal);
-        });
-
-      }).call(this);
-
 
 
 /*----------------------------------------------------*/

@@ -89,13 +89,6 @@ TOC :
       line-height: 46px;      
    }
 
-    /* Call to Action Section
-   ------------------------------------------------------------------- */
-   #call-to-action .header-col h1:before {
-      font-size: 66px;
-      line-height: 66px;
-   }
-
    /* Contact Section
    ------------------------------------------------------------------- */
    #contact .section-head { margin-bottom: 30px; }
@@ -293,53 +286,10 @@ TOC :
    .bars { width: 100%; }
 
 
-   /* Call To Action Section
-   /* ----------------------------------------------------------------- */
-  #call-to-action {
-    padding-bottom: 30px;
-    padding-top: 20px;
-    text-align: center;
-  }
-   #call-to-action h1 {
-      font: 16px/24px 'Open Sans', sans-serif;
-      text-align: center;
-      margin-bottom: 30px;
-      text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-   }
-   #call-to-action h1 span { display: none; }
-   #call-to-action p { font-size: 15px; }
-
-
    /* Portfolio Section
    /* ----------------------------------------------------------------- */
    #portfolio-wrapper .columns { margin-bottom: 40px; }
    .popup-modal {	max-width: 85%; }
-
-
-   /* Testimonials Section
-   ----------------------------------------------------------------------- */
-   #testimonials .text-container { text-align: center; }
-   #testimonials h1 {
-      font: 16px/24px 'Open Sans', sans-serif;
-      text-align: center;
-   }
-   #testimonials h1 span { display: block; }
-   #testimonials .header-col h1:before { content: none; }
-   #testimonials blockquote { padding-bottom: 24px; }
-   #testimonials blockquote p {
-      font-size: 14px;
-      line-height: 24px;      
-   }
-
-   #testimonials h1 {
-     padding: 36px 0 24;
-   }
-
-   #testimonials .text-container {
-     padding-bottom: 30px;
-     padding-top: 10px;
-   }
-
 
    /* contact Section
    ----------------------------------------------------------------------- */
@@ -483,10 +433,6 @@ TOC :
       display: block;
       float: none!important;
       margin: 0 auto!important;
-   }
-
-   #call-to-action h2 {
-     font: 700 24px/36px "Open Sans",sans-serif;
    }
    /* footer
    ------------------------------------------------------------------------ */

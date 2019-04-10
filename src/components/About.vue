@@ -1,0 +1,263 @@
+<template>
+	<!-- About Section -->
+	<section id="about">
+		<div class="row bio-container">
+			<div class="twelve columns bio-inner">
+				<div class="six columns bio-left">
+					<div class="pp-container">
+						<img class="profile-pic wow zoomIn" :src="avatar">
+						<h2>John Doe</h2>
+						<h3>UI/UX Developer</h3>
+					</div>
+					<!-- Profile Picture -->
+				</div>
+	
+				<div class="six columns main-col wow fadeIn">
+					<div class="arrow-left"></div>
+	
+					<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+						sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+						incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+					</p>
+	
+					<div class="row">
+						<div class="six columns download">
+							<p>
+								<a href="#contact" class="button">
+									<i class="fa fa-paper-plane"></i>Hire Me
+								</a>
+								<a href="resume.pdf" class="button" target="_blank">
+									<i class="fa fa-download"></i>Download Resume
+								</a>
+							</p>
+						</div>
+						<!-- Download Buttons -->
+					</div>
+				</div>
+				<!-- end .main-col -->
+			</div>
+		</div>
+		<!-- Social Section -->
+		<div id="social">
+			<div class="row social-container">
+				<ul class="social">
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-dribbble"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-skype"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Social End -->
+	</section>
+	<!-- About Section End-->
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				avatar: require("@/assets/images/avatar.jpg")
+			};
+		}
+	};
+</script>
+
+<style scoped lang="less">
+	#about {
+		background: url(../assets/images/1.jpg) no-repeat fixed center center / cover;
+		overflow: hidden;
+
+		a {
+			color: #fff;
+			&:visited {
+				color: #fff;
+			}
+			&:hover,
+			&:focus {
+				color: #11ABB0;
+			}
+		}
+
+		h1 {
+			color: #fff;
+			border-color: #dedede;
+			margin-bottom: 60px;
+			width: 400px;
+			&:hover {
+				border-color: #fff;
+			}
+		}
+
+		h2 {
+			font: 22px/30px 'Open Sans', sans-serif;
+			font-weight: 700;
+			color: #fff;
+			margin-bottom: 12px;
+			text-align: center;
+		}
+
+		h3 {
+			border-bottom: 3px solid #fff;
+			color: #fff;
+			font: 400 18px/24px "Raleway", sans-serif;
+			margin-bottom: 15px;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+
+		p {
+			line-height: 30px;
+			color: #fff;
+		}
+
+		.profile-pic {
+			border: 5px solid #b1b2b4;
+			border-radius: 100%;
+			box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
+			height: auto;
+			margin: 15px auto;
+			position: relative;
+			width: 100%;
+			z-index: 2;
+		}
+
+		.download {
+			margin-top: 25px;
+			width: 90%;
+			float: none;
+
+			.button {
+				margin-top: 6px;
+				background: #11abb0;
+
+				&:hover {
+					background: #fff;
+					color: #2B2B2B;
+				}
+			}
+		}
+
+		.button {
+			background: none repeat scroll 0 0 #11abb0;
+			display: inline;
+			margin-right: 10px;
+			margin-top: 6px;
+
+			i {
+				margin-right: 15px;
+				font-size: 20px;
+			}
+		}
+
+		.bio-container {
+			width: 100%;
+			max-width: 100%;
+			padding: 0;
+		}
+
+		.bio-inner {
+			padding: 0;
+		}
+
+		.bio-left {
+			background: rgba(0, 0, 0, 0.6);
+			height: 500px;
+			padding: 60px 30px;
+		}
+
+		.main-col {
+			background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+			height: 500px;
+			padding: 50px;
+		}
+	}
+	
+	.pp-container {
+		display: block;
+		margin: 5px auto;
+		padding: 10px;
+		width: 225px;
+	}
+	
+	.arrow-left {
+		border-bottom: 25px solid transparent;
+		border-right: 25px solid rgba(0, 0, 0, 0.5);
+		border-top: 25px solid transparent;
+		height: 0;
+		left: -25px;
+		position: absolute;
+		top: 40%;
+		width: 0;
+		z-index: 10;
+	}
+	
+	#social {
+		background: rgba(0, 0, 0, .4);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 80px;
+		display: block;
+		z-index: 2;
+	}
+	
+	.social-container {
+		display: block;
+		vertical-align: middle;
+		margin: 0 auto;
+		width: 85%;
+		text-align: center;
+		.social {
+			margin: 24px 0;
+			padding: 0;
+			font-size: 30px;
+			text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				padding: 0;
+				a {
+					color: #fff;
+					&:hover {
+						color: #11ABB0;
+					}
+				}
+			}
+		}
+	}
+</style>
+
