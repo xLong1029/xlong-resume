@@ -1,26 +1,12 @@
-# vue-test
+# xlong-resume
 
-## Project setup
-```
-npm install
-```
+H5响应式个人简历
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 安装依赖
+> npm install
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 启动项目
+> npm run serve
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+### 项目打包
+> npm run build
