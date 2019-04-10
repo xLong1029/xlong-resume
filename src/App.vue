@@ -3,9 +3,9 @@
 		<!-- Loading -->
 		<Loading />
 		<!-- 侧边栏 -->
-		<SideBar />
+		<SideBar :avatar="avatar" />
 		<!-- 个人介绍 -->
-		<About />
+		<About :avatar="avatar" />
 		<!-- 简历内容 -->
 		<Resume />
 		<!-- 个人作品集 -->
@@ -39,7 +39,9 @@
 			Footer
 		},
 		data() {
-			return {}
+			return {
+				avatar: require("@/assets/images/avatar.jpg"),
+			}
 		},
 		created() {
 			this.init();

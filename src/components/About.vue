@@ -59,11 +59,12 @@
 
 <script>
 	export default {
-		data() {
-			return {
-				avatar: require("@/assets/images/avatar.jpg")
-			};
-		}
+		props: {
+			avatar: {
+                type: String,
+				default: require("@/assets/images/avatar.jpg")
+			}		
+        }
 	};
 </script>
 
