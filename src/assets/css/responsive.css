@@ -16,15 +16,6 @@ TOC :
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (min-width : 768px) and (max-width: 1024px) {
-
-    /* header styles
-   ------------------------------------------------------------------ */
-   header .banner-text h1 {
-      font: 80px/1.1em 'Open Sans', sans-serif;
-      letter-spacing: -1px;
-      margin: 0 auto 12px auto;
-   }
-
   #about .download {
     float: none;
     margin-top: 0;
@@ -49,22 +40,6 @@ TOC :
 /* screenwidth less than 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
-
-    /* header styles
-   ------------------------------------------------------------------ */
-   header .banner { padding-bottom: 12px; }
-   header .banner-text h1 {
-      font: 78px/1.1em 'Open Sans', sans-serif;
-      letter-spacing: -1px;      
-   }
-   header .banner-text h3 {
-      font: 17px/1.9em 'Raleway', serif;
-      width: 80%;
-   }
-   header .banner-text hr {
-      width: 65%;
-      margin: 12px auto;
-   }
    /* m-nav */
    #m-nav {
       font: 11px 'Open Sans', sans-serif;
@@ -76,18 +51,7 @@ TOC :
    /* Resume Section
    ------------------------------------------------------------------- */
    #resume h1 { font: 16px/24px 'Open Sans', sans-serif; }
-   #resume .main-col { padding-right: 5%; }   
-
-   /* Testimonials Section
-   ------------------------------------------------------------------- */
-   #testimonials .header-col h1:before {
-      font-size: 66px;
-      line-height: 66px;
-   }
-   #testimonials blockquote p {
-      font-size: 22px;
-      line-height: 46px;      
-   }
+   #resume .main-col { padding-right: 5%; } 
 
    /* Contact Section
    ------------------------------------------------------------------- */
@@ -205,34 +169,6 @@ TOC :
      display: block;
 
    }
-
-
-   /* Header Styles
-   -------------------------------------------------------------------- */
-   header .banner {
-      padding-bottom: 12px;
-      padding-top: 6px;
-   }
-   header .banner-text h1 { font: 68px/1.1em 'Open Sans', sans-serif; }
-   header .banner-text h3 {
-      font: 16px/1.9em 'Raleway', serif;
-      width: 85%;
-   }
-   header .banner-text hr {
-      width: 80%;
-      margin: 18px auto;
-   }
-
-   /* header social links */
-   header .social {
-      margin: 18px 0 24px 0;
-      font-size: 24px;
-      line-height: 36px;      
-   }
-   header .social li { margin: 0 10px; }
-
-    /* scrolldown link */
-   header .scrolldown { display: none; }
 
 
    /* About Section
@@ -360,22 +296,6 @@ TOC :
    /* mobile navigation
    -------------------------------------------------------------------- */
    #m-nav ul#nav { width: auto; float: none; }
-
-   /* header styles
-   -------------------------------------------------------------------- */
-   header .banner { padding-top: 24px; }
-   header .banner-text h1 {
-      font: 40px/1.1em 'Open Sans', sans-serif;      
-      margin: 0 auto 24px auto;
-   }
-   header .banner-text h3 {
-      font: 14px/1.9em 'Raleway', sans-serif;
-      width: 90%;
-   }
-  
-   /* header social links */
-   header .social { font-size: 20px;}
-   header .social li { margin: 0 6px; }
 
    /* About
   ------------------------------------------------------------------------ */

@@ -4,44 +4,19 @@
 			<div class="twelve columns">
 				<ul class="social-links">
 					<li>
-						<a href="#">
-							<i class="fa fa-facebook"></i>
+						<a href="http://wpa.qq.com/msgrd?v=3&uin=381612175&site=qq&menu=yes">
+							<i class="fa fa-qq"></i>
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<i class="fa fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-google-plus"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-linkedin"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-dribbble"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fa fa-skype"></i>
+						<a href="tel:18376686974">
+							<i class="fa fa-phone"></i>
 						</a>
 					</li>
 				</ul>
 	
 				<ul class="copyright">
-					<li>John Doe &copy; Copyright 2014, All Rights Reserved</li>
+					<li>xLong &copy; Copyright 2019, All Rights Reserved</li>
 				</ul>
 			</div>
 	
@@ -67,11 +42,6 @@
 			color: #525252;
 			&:visited {
 				color: #525252;
-			}
-
-			&:hover,
-			&:focus {
-				color: #fff;
 			}
 		}
 

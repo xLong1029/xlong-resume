@@ -48,6 +48,8 @@
 </script>
 
 <style scoped lang="less">
+	// 引入通用配置文件
+	@import "../assets/less/color";
 	.logo {
 		width: 100px;
 		height: 100px;
@@ -77,13 +79,13 @@
 
 			&.current {
 				background: #272727;
-				border-left: 2px solid #ed5565;
+				border-left: 2px solid @base_color;
 
 				a {
-					color: #ed5565;
+					color: @base_color;
 
 					&:hover {
-						color: #ed5565;
+						color: @base_color;
 					}
 				}
 			}
@@ -116,7 +118,7 @@
 	}
 	
 	#left-nav {
-		background: #333;
+		background: #000;
 		width: 200px;
 		height: 100%;
 		position: fixed;
@@ -155,7 +157,7 @@
 			backface-visibility: hidden;
 			position: absolute;
 			left: 0;
-			border-top: 7px solid white;
+			border-top: 7px solid @base_color;
 			width: 100%;
 			-webkit-transition: 0.25s;
 			transition: 0.25s;
@@ -168,9 +170,9 @@
 				-webkit-backface-visibility: hidden;
 				backface-visibility: hidden;
 				top: 15px;
-				-webkit-transform: rotate(50deg);
-				-ms-transform: rotate(50deg);
-				transform: rotate(50deg);
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
 				-webkit-transition: 0.25s 0.2s;
 				transition: 0.25s 0.2s;
 			}
@@ -191,9 +193,9 @@
 				-webkit-backface-visibility: hidden;
 				backface-visibility: hidden;
 				top: 15px;
-				-webkit-transform: rotate(-410deg);
-				-ms-transform: rotate(-410deg);
-				transform: rotate(-410deg);
+				-webkit-transform: rotate(-405deg);
+				-ms-transform: rotate(-405deg);
+				transform: rotate(-405deg);
 				-webkit-transition: 0.25s 0.2s;
 				transition: 0.25s 0.2s;
 			}

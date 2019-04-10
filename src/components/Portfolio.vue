@@ -2,7 +2,7 @@
 	<section id="portfolio">
 		<div class="row">
 			<div class="twelve columns collapsed">
-				<h1 class="section-title wow fadeInDown">Some of My Works</h1>
+				<h1 class="section-title wow fadeInDown">作品集 / Work</h1>
 	
 				<!-- portfolio-wrapper -->
 				<div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf wow fadeIn">
@@ -306,8 +306,11 @@
 </template>
 
 <style scoped lang="less">
+	// 引入通用配置文件
+	@import "../assets/less/color";
+	
 	#portfolio {
-		background: url(../assets/images/3.jpg) no-repeat fixed center center / cover;
+		background: url(../assets/images/1.jpg) no-repeat fixed center center / cover;
 		padding-top: 90px;
 		padding-bottom: 60px;
 		h1 {
@@ -322,7 +325,8 @@
 	}
 	
 	.btn-close {
-		background: #ed5565;
+		background: @assist_color;
+		margin-left: 20px;
 	}
 	
 	
@@ -335,6 +339,7 @@
 	
 	.portfolio-item{
 		.item-wrap {
+			min-height: 100px;
 			background: none repeat scroll 0 0 #fff;
 			border: 5px solid #fff;
 			box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
@@ -364,8 +369,7 @@
 				-moz-transition: opacity 0.3s ease-in-out;
 				-o-transition: opacity 0.3s ease-in-out;
 				transition: opacity 0.3s ease-in-out;
-				background: #ed5565;
-				background: rgba(237, 85, 101, 0.9);
+				background: @assist_color;
 			}
 
 			.link-icon {
@@ -468,7 +472,7 @@
 		}
 
 		.link-box {
-			padding: 18px 36px;
+			padding: 18px 18px;
 			background: #111;
 			text-align: left;
 
@@ -483,7 +487,7 @@
 		}
 
 		a:hover {
-			color: #00cccc;
+			color: @base_color;
 		}
 	}	
 	

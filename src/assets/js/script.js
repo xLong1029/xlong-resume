@@ -9,11 +9,9 @@
 /* Preloader
 ------------------------------------------------------ */
 
-$(window).load(function(){
-
-  $('.loader').fadeOut();    
-  $('#preloader').delay(350).fadeOut('slow');    
-  $('body').delay(350);   
+$(window).load(function(){  
+  $('#loading').delay(800).fadeOut();    
+  $('body').delay(800);   
 
   });
 
@@ -25,7 +23,7 @@ jQuery(document).ready(function($) {
 ------------------------------------------------------ */
 
   $("html").niceScroll({
-    cursorcolor:"#11abb0", // Set cursor color
+    cursorcolor:"#56AD48", // Set cursor color
     cursorwidth: "8", // Sety cursor width
     cursorborder: "" // Set cursor border color, default left none
   });
@@ -69,8 +67,6 @@ new WOW().init();
 ------------------------------------------------------*/
 
 var sections = $("section");
-
-console.log(sections);
 var navigation_links = $("#left-nav a");
 
 sections.waypoint({
@@ -81,7 +77,6 @@ sections.waypoint({
 
     active_section = $(this);
     if (direction === "up") active_section = active_section.prev();
-    console.log(active_section);
     var active_link = $('#left-nav a[href="#' + active_section.attr("id") + '"]');
 
     navigation_links.parent().removeClass("current");

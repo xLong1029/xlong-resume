@@ -14,7 +14,7 @@
 							<ul class="social">
 								<li>
 									<a href="http://wpa.qq.com/msgrd?v=3&uin=381612175&site=qq&menu=yes">
-										<i class="fa fa-qq" style="font-size: 26px;"></i>
+										<i class="fa fa-qq"></i>
 									</a>
 								</li>
 								<li>
@@ -68,7 +68,10 @@
 	};
 </script>
 
-<style scoped lang="less">
+<style lang="less">
+	// 引入通用配置文件
+	@import "../assets/less/color";
+	
 	#about {
 		background: url(../assets/images/1.jpg) no-repeat fixed center center / cover;
 		overflow: hidden;
@@ -80,7 +83,7 @@
 			}
 			&:hover,
 			&:focus {
-				color: #11ABB0;
+				color: @base_color;
 			}
 		}
 
@@ -134,7 +137,7 @@
 
 			.button {
 				margin-top: 6px;
-				background: #11abb0;
+				background: @base_color;
 
 				&:hover {
 					background: #fff;
@@ -144,7 +147,7 @@
 		}
 
 		.button {
-			background: none repeat scroll 0 0 #11abb0;
+			background: none repeat scroll 0 0 @base_color;
 			display: inline;
 			margin-right: 10px;
 			margin-top: 6px;
@@ -166,7 +169,7 @@
 		}
 
 		.bio-left {
-			background: rgba(0, 0, 0, 0.6);
+			background: rgba(0, 0, 0, 0.2);
 			height: 500px;
 			padding: 60px 30px;
 		}
@@ -203,7 +206,6 @@
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 80px;
 		display: block;
 		z-index: 2;
 	}
@@ -226,7 +228,7 @@
 				a {
 					color: #fff;
 					&:hover {
-						color: #11ABB0;
+						color: @base_color;
 					}
 				}
 			}

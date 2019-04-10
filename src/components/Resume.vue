@@ -158,15 +158,18 @@
 </template>
 
 <style scoped lang="less">
+	// 引入通用配置文件
+	@import "../assets/less/color";
+	
 	#resume {
 		background: #fff;
 		overflow: hidden;
 		padding-bottom: 72px;
 		padding-top: 90px;
 		a {
-			color: #11abb0;
+			color: @base_color;
 			&:visited {
-				color: #11abb0;
+				color: @base_color;
 			}
 			&:hover,
 			&:focus {
@@ -177,10 +180,10 @@
 			color: #666;
 			margin-bottom: 60px;
 			letter-spacing: 1px;
-			border-color: #11abb0;
+			border-color: @base_color;
 			width: 400px;
 			&:hover {
-				border-color: #ed5565;
+				border-color: @assist_color;
 			}
 		}
 		h2 {
@@ -188,7 +191,7 @@
 			letter-spacing: 1px;
 			text-transform: uppercase;
 			span {
-				border-bottom: 3px solid #11abb0;
+				border-bottom: 3px solid @base_color;
 				padding-bottom: 6px;
 			}
 		}
@@ -236,7 +239,7 @@
 		position: relative;
 		max-width: 100%;
 		&:before {
-			background: #11abb0;
+			background: @base_color;
 			content: '';
 			margin-left: -1px;
 			position: absolute;
@@ -255,15 +258,15 @@
 				-ms-transform: rotate(-45deg);
 				-webkit-transform: rotate(-45deg);
 				transform: rotate(-45deg);
-				background-color: #ed5565;
+				background-color: #ffb039;
 			}
 			.timeline-event-thumbnail {
-				-moz-box-shadow: inset 40em 0 0 0 #ed5565;
-				-webkit-box-shadow: inset 40em 0 0 0 #ed5565;
-				box-shadow: inset 40em 0 0 0 #ed5565;
+				-moz-box-shadow: inset 40em 0 0 0 #ffb039;
+				-webkit-box-shadow: inset 40em 0 0 0 #ffb039;
+				box-shadow: inset 40em 0 0 0 #ffb039;
 			}
 			h3 {
-				color: #ed5565;
+				color: #ffb039;
 			}
 		}
 		h3 {
@@ -326,11 +329,11 @@
 		-webkit-transition: box-shadow 0.5s ease-in;
 		-webkit-transition-delay: 0.1s;
 		transition: box-shadow 0.5s ease-in 0.1s;
-		-moz-box-shadow: inset 0 0 0 0em #11abb0;
-		-webkit-box-shadow: inset 0 0 0 0em #11abb0;
-		box-shadow: inset 0 0 0 0em #11abb0;
-		background: none repeat scroll 0 0 #ed5565;
-		box-shadow: 0 0 0 0 #11abb0 inset;
+		-moz-box-shadow: inset 0 0 0 0em @base_color;
+		-webkit-box-shadow: inset 0 0 0 0em @base_color;
+		box-shadow: inset 0 0 0 0em @base_color;
+		background: none repeat scroll 0 0 #ffb039;
+		box-shadow: 0 0 0 0 @base_color inset;
 		color: #fff;
 		display: inline-block;
 		font-size: 14px;
@@ -383,14 +386,14 @@
 	}
 	
 	.vuejs {
-		background: #3498db;
+		background: #41b8f0;
 		width: 85%;
 		-moz-animation: vuejs 2s ease;
 		-webkit-animation: vuejs 2s ease;
 	}
 	
 	.eggjs {
-		background: #d35400;
+		background: #c089e2;
 		width: 75%;
 		-moz-animation: eggjs 2s ease;
 		-webkit-animation: eggjs 2s ease;
@@ -404,7 +407,7 @@
 	}
 	
 	.css {		
-		background: #1abc9c;
+		background: #56AD48;
 		width: 95%;
 		-moz-animation: css 2s ease;
 		-webkit-animation: css 2s ease;
@@ -418,7 +421,7 @@
 	}
 	
 	.jquery {
-		background: #9b59b6;
+		background: #ffb039;
 		width: 90%;
 		-moz-animation: jquery 2s ease;
 		-webkit-animation: jquery 2s ease;

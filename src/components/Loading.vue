@@ -1,71 +1,76 @@
 <template>
-	<div id="preloader">
-		<div class="loader"></div>
+	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div id="object"></div>
+			</div>
+		</div>
 	</div>
 </template>
 
 <style scoped lang="less">
-	#preloader {
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
+	#loading {
+		background: #000;
 		height: 100%;
+		width: 100%;
+		position: fixed;
 		z-index: 9999;
-		background-color: #57BDDB;
-		background: -webkit-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%);
-		/* Chrome 10+, Saf5.1+ */
-		background: -moz-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%);
-		/* FF3.6+ */
-		background: -ms-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%);
-		/* IE10 */
-		background: -o-linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%);
-		/* Opera 11.10+ */
-		background: linear-gradient(90deg, #4CB8C4 10%, #3CD3AD 90%);
-		/* W3C */
+		margin-top: 0px;
+		top: 0px;
 	}
 	
-	.loader {
-		animation: animate 1.5s linear infinite;
-		clip: rect(0, 80px, 80px, 40px);
-		height: 80px;
-		width: 80px;
+	#loading-center {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	
+	#loading-center-absolute {
 		position: absolute;
-		left: calc(50% - 40px);
-		top: calc(50% - 40px);
-		z-index: 999;
+		left: 50%;
+		top: 50%;
+		height: 200px;
+		width: 200px;
+		margin-top: -100px;
+		margin-left: -100px;
+	}
+	
+	#object {
+		background: #000;
+		width: 60px;
+		height: 60px;
+		-webkit-animation: animate 1s infinite ease-in-out;
+		animation: animate 1s infinite ease-in-out;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 60px;
+		border: 3px dashed #fff;
+	}
+	
+	@-webkit-keyframes animate {
+		0% {
+			-webkit-transform: perspective(160px);
+		}
+		50% {
+			-webkit-transform: perspective(160px) rotateY(-180deg);
+		}
+		100% {
+			-webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg);
+		}
 	}
 	
 	@keyframes animate {
 		0% {
-			transform: rotate(0deg)
-		}
-		100% {
-			transform: rotate(220deg)
-		}
-	}
-	
-	.loader:after {
-		animation: animate2 1.5s ease-in-out infinite;
-		clip: rect(0, 80px, 80px, 40px);
-		content: '';
-		border-radius: 50%;
-		height: 80px;
-		width: 80px;
-		position: absolute;
-	}
-	
-	@keyframes animate2 {
-		0% {
-			box-shadow: inset #fff 0 0 0 17px;
-			transform: rotate(-140deg);
+			transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+			-webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg);
 		}
 		50% {
-			box-shadow: inset #fff 0 0 0 2px;
+			transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+			-webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
 		}
 		100% {
-			box-shadow: inset #fff 0 0 0 17px;
-			transform: rotate(140deg);
+			transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+			-webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
 		}
 	}
 </style>
