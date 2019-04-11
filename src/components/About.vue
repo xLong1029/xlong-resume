@@ -66,7 +66,7 @@
 							<a href="#contact" class="button">
 								<i class="iconfont ic-phone"></i>与我联系
 							</a>
-							<a download="file/resume.doc" class="button" target="_blank">
+							<a download="https://raw.githubusercontent.com/xLong1029/xlong-resume/gh-pages/file/resume.doc" class="button" target="_blank">
 								<i class="iconfont ic-download-f"></i>下载简历
 							</a>
 						</div>
