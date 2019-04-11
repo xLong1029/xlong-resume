@@ -294,6 +294,11 @@ TOC :
     width: 260px!important;
   }
 
+  .more-work{
+     font-size: 14px;
+     width: 150px;
+  }
+
    /* mobile navigation
    -------------------------------------------------------------------- */
    #m-nav ul#nav { width: auto; float: none; }

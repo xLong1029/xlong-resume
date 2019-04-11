@@ -81,9 +81,9 @@
 		}
 
 		.social-links {
-			margin: 18px 0 30px 0;
+			margin: 40px 0;
 			padding: 0;
-			font-size: 30px;
+			font-size: 40px;
 
 			li {
 				display: inline-block;

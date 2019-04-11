@@ -12,37 +12,13 @@
 			<div class="nine columns main-col">
 				<div class="work-timeline">
 					<ul class="timeline">
-						<li class="timeline-event">
+						<li v-for="(item, index) in experience" :key="index" class="timeline-event">
 							<label class="timeline-event-icon"></label>
 							<div class="timeline-event-copy">
-								<p class="timeline-event-thumbnail">January 2013 - Present</p>
-								<h3>Fantasy IT Kingdom</h3>
-								<h4>Lead Developer</h4>
-								<p>Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. Vestibulum gravida nulla nec justo congue, vitae sodales massa
-									ullamcorper.
-								</p>
-							</div>
-						</li>
-						<li class="timeline-event">
-							<label class="timeline-event-icon"></label>
-							<div class="timeline-event-copy">
-								<p class="timeline-event-thumbnail">January 2006 - December 208</p>
-								<h3>Awesome Softwares</h3>
-								<h4>UI/UX Engineer</h4>
-								<p>Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. Vestibulum gravida nulla nec justo congue, vitae sodales massa
-									ullamcorper.
-								</p>
-							</div>
-						</li>
-						<li class="timeline-event">
-							<label class="timeline-event-icon"></label>
-							<div class="timeline-event-copy">
-								<p class="timeline-event-thumbnail">January 2000 - December 2006</p>
-								<h3>Amazing Developers</h3>
-								<h4>Front-End Developer</h4>
-								<p>Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. Vestibulum gravida nulla nec justo congue, vitae sodales massa
-									ullamcorper.
-								</p>
+								<p class="timeline-event-thumbnail">{{ item.workTime }}</p>
+								<h3>{{ item.company }}</h3>
+								<h4>{{ item.job }}</h4>
+								<p v-for="(vo, i) in item.jobContent" :key="i">{{ (i + 1) +'.'+ vo }}</p>
 							</div>
 						</li>
 					</ul>
@@ -62,10 +38,7 @@
 			</div>
 	
 			<div class="nine columns main-col">
-				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-				</p>
-	
+				<p>能独立完成一个小型项目开发，包括但不限于PC页面、WebApp、企业CMS等开发。</p>
 				<div class="bars">
 					<ul class="skills">
 						<li>
@@ -88,10 +61,10 @@
 							<span class="bar-expand eggjs wow fadeInLeft"></span>
 							<em>Egg</em>
 						</li>
-						<!-- <li>
-							<span class="bar-expand wordpress wow fadeInLeft"></span>
-							<em>Wordpress</em>
-						</li> -->
+						<li>
+							<span class="bar-expand illustrator wow fadeInLeft"></span>
+							<em>Illustrator</em>
+						</li>
 					</ul>
 				</div>
 				<!-- end skill-bars -->
@@ -99,53 +72,56 @@
 			<!-- main-col end -->
 		</div>
 		<!-- End skills -->
-	
-		<!-- Awards -->
-		<div class="row awards">
+
+		<!-- Education -->
+		<div class="row education">
 			<div class="three columns header-col">
 				<h2>
-					<span>Recognition</span>
+					<span>教育</span>
 				</h2>
 			</div>
 	
 			<div class="nine columns main-col">
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					2014年毕业于 国立华侨大学 计算机科学与技术（数字媒体技术方向） 本科专业
 				</p>
+			</div>
+			<!-- main-col end -->
+		</div>
 	
+		<!-- Awards -->
+		<div class="row awards">
+			<div class="three columns header-col">
+				<h2>
+					<span>其他</span>
+				</h2>
+			</div>
+	
+			<div class="nine columns main-col">	
 				<div class="award-list">
 					<ul>
 						<li class="wow fadeIn">
 							<span>
-							<i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
+								<i class="iconfont ic-certificate pull-left"></i>
 							</span>
-							<h3>App Development Contest</h3>
-							<h5>Winner</h5>
-							<h4>Dhaka, Bangladesh</h4>
+							<h3>证书</h3>
+							<h4>英语专业六级</h4>
+							<h4>计算机助理工程师</h4>
 						</li>
 						<li class="wow fadeIn">
 							<span>
-							<i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
+								<i class="iconfont ic-bisai pull-left"></i>
 							</span>
-							<h3>Best Front-End Developers Award</h3>
-							<h5>Top Front-End Developer</h5>
-							<h4>San Fransisco, USA</h4>
+							<h3>赛事</h3>
+							<h4>曾参与《乱入！Sonkwo形象补全计划 - 杉果吉祥物征集大赛》</h4>
+							<h4>曾参与《逸想天开 － 天逸笔记本卡通形象设计大赛》</h4>
 						</li>
 						<li class="wow fadeIn">
 							<span>
-							<i class="fa fa-trophy fa-5x pull-left fa-fw"></i>
+								<i class="iconfont ic-love pull-left"></i>
 							</span>
-							<h3>Awesome UI/UX Designers Award</h3>
-							<h5>Best UI/UX Designer</h5>
-							<h4>New York, USA</h4>
-						</li>
-						<li class="wow fadeIn">
-							<span>
-							<i class="fa fa-microphone fa-5x pull-left fa-fw"></i>
-							</span>
-							<h3>UX Conference</h3>
-							<h5>Speaker</h5>
-							<h4>Dhaka, Bangladesh</h4>
+							<h3>公益</h3>
+							<h4>参与设计免费公益字体——站酷文艺体</h4>
 						</li>
 					</ul>
 				</div>
@@ -156,6 +132,57 @@
 		<!-- End skills -->
 	</section>
 </template>
+
+<script>	
+	export default {
+		data() {
+			return {
+				experience: [
+					{
+						company: '广西华建信息科技股份公司',
+						workTime: '2017/05 - 至今',
+						job: 'Web前端开发工程师',
+						jobContent: [
+							'负责研发建筑材料智能选材平台（PC及Mobile端）、项目申报平台（爬取项目信息，仅供内部员工使用）',
+							'自主创新：基于Egg + Vue + Webpack 开发多页面和单页面服务端客户端渲染的企业CMS系统，可用于企业网站，微信微网站的实现。前台页面可响应式匹配各种移动设备',
+							'负责设计吉祥物和表情包'
+						]
+					},
+					{
+						company: '南宁云海风网络科技有限公司',
+						workTime: '2016/07 - 2017/03',
+						job: 'Web前端项目经理',
+						jobContent: [
+							'负责公司官网项目的开发和日常维护',
+							'负责教授实习生web前端技术，并指导实习生如期完成公司安排的项目',
+							'参与web课程研发和后期优化，完成教学相关文档编写工作'
+						]
+					},
+					{
+						company: '广西昇泰安电子商务发展有限公司',
+						workTime: '2015/03 - 2016/06',
+						job: 'web前端/GUI设计师',
+						jobContent: [
+							'负责公司门下各网站页面调优、维护工作、相关框架拓展开发',
+							'参与app产品原型讨论和产品设计，负责APP开发及游戏宣传海报设计'
+						]
+					},
+					{
+						company: '福建康众畅想信息科技有限公司',
+						workTime: '2014/02 - 2015/01',
+						job: '开发部团队组长',
+						jobContent: [
+							'分配团队开发人员日常任务',
+							'负责公司项目开发，包括但不限于企业站、商城、微信网页等项目',
+							'独立构思制作H5场景应用模版',
+							'负责网站设计和海报设计'
+						]
+					}
+				]
+			}
+		}
+	};
+</script>
 
 <style scoped lang="less">
 	// 引入通用配置文件
@@ -225,7 +252,8 @@
 	}
 	
 	.work,
-	.skill {
+	.skill,
+	.education {
 		margin-bottom: 48px;
 		padding-bottom: 24px;
 		border-bottom: 1px solid #e8e8e8;
@@ -288,16 +316,14 @@
 		h4 {
 			font-size: 20px;
 			margin-bottom: 15px;
-			font-family: 'Raleway', sans-serif;
 		}
 		strong {
 			font-weight: 700;
 		}
 		p:not(.timeline-event-thumbnail) {
 			font-size: 14px;
-			font-weight: 300;
 			line-height: 24px;
-			padding-bottom: 20px;
+			margin-bottom: 10px;
 		}
 	}
 	
@@ -397,11 +423,11 @@
 		-webkit-animation: eggjs 2s ease;
 	}
 	
-	.wordpress {
+	.illustrator {
 		background: #34495e;
-		width: 50%;
-		-moz-animation: wordpress 2s ease;
-		-webkit-animation: wordpress 2s ease;
+		width: 80%;
+		-moz-animation: illustrator 2s ease;
+		-webkit-animation: illustrator 2s ease;
 	}
 	
 	.css {		
@@ -461,21 +487,21 @@
 		}
 	}
 	
-	@-moz-keyframes wordpress {
+	@-moz-keyframes illustrator {
 		0% {
 			width: 0px;
 		}
 		100% {
-			width: 50%;
+			width: 80%;
 		}
 	}
 
-	@-webkit-keyframes wordpress {
+	@-webkit-keyframes illustrator {
 		0% {
 			width: 0px;
 		}
 		100% {
-			width: 50%;
+			width: 80%;
 		}
 	}
 	
@@ -534,22 +560,32 @@
 	}
 	
 	// award
-	.award-list ul li {
-		margin-bottom: 30px;
-		display: block;
-		h3 {
-			font-size: 18px !important;
-			margin-bottom: 5px;
+	.award-list{
+		ul li {
+			margin-bottom: 30px;
+			display: block;
+			h3 {
+				font-size: 18px !important;
+				margin-bottom: 5px;
+			}
+			h4 {
+				color: #666;
+				font-size: 16px !important;
+			}
+			h5 {
+				color: #888;
+				font-family: "Raleway", sans-serif;
+				font-size: 14px !important;
+				line-height: 20px;
+			}
 		}
-		h4 {
-			color: #666;
-			font-size: 16px !important;
-		}
-		h5 {
-			color: #888;
-			font-family: "Raleway", sans-serif;
-			font-size: 14px !important;
-			line-height: 20px;
+
+		.pull-left{
+			display: inline;
+			text-align: center;
+			font-size: 5em;
+			line-height: 85px;
+			margin-right: 20px;
 		}
 	}
 </style>

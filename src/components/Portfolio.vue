@@ -9,97 +9,115 @@
 			<div class="row">
 				<ul class="work">
 					<li class="filter" data-filter="all">全部</li>
-					<li class="filter" data-filter=".development">WEB开发</li>
-					<li class="filter" data-filter=".webdesign">网页设计</li>
-					<li class="filter" data-filter=".photography">教程</li>
+					<li class="filter" data-filter=".development">开发</li>
+					<li class="filter" data-filter=".design">设计</li>
+					<li class="filter" data-filter=".course">教程</li>
 				</ul>
 			</div>
 			<div class="row">
-				<div class="work-inner">	
-					<!-- START SINGLE WORK DESIGN AREA -->
-					<div class="four columns mix webdesign">
-						<div class="item wow fadeInUp" data-wow-delay="0.2s">
-							<a href="assets/images/portfolio/1.jpg">
-								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554961965115&di=4e97d531fa8cd47b58753ee44165eef8&imgtype=0&src=http%3A%2F%2Fpic41.nipic.com%2F20140601%2F18681759_143805185000_2.jpg" alt="">
+				<div class="work-inner">
+					<div v-for="(item, index) in work" :key="index" :class="'four columns mix ' + item.tag">
+						<div class="item wow fadeInUp" :data-wow-delay="item.wowDelay + 's'">
+							<a :href="item.url" target="_blank">
+								<img :src="item.imgUrl" :alt="item.title">
 								<div class="portfolio-caption">
-									<h4>web design</h4>
+									<h4>{{ item.title }}</h4>
 								</div>
 							</a>
 						</div>
 					</div>
-					<!-- END SINGLE WORK DESIGN AREA -->
-					<!-- START SINGLE WORK DESIGN AREA -->
-					<div class="four columns mix development">
-						<div class="item wow fadeInUp" data-wow-delay="0.4s">
-							<a href="assets/images/portfolio/2.jpg">
-								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554961965115&di=862a06c4ef33c50b07d0a0a807729863&imgtype=0&src=http%3A%2F%2Fwww.wallcoo.com%2Fhuman%2FSydney%2520Australia%2Fwallpapers%2F1024x768%2FAustralia_Sydney_photo_picture_Choices.jpg"
-								    alt="">
-								<div class="portfolio-caption">
-									<h4>web development</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- END SINGLE WORK DESIGN AREA -->
-					<!-- START SINGLE WORK DESIGN AREA -->
-					<div class="four columns mix web">
-						<div class="item wow fadeInUp" data-wow-delay="0.6s">
-							<a href="assets/images/portfolio/3.jpg">
-								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554961965115&di=44313e5f067484516a698ea9324b1c64&imgtype=0&src=http%3A%2F%2Fpic5.nipic.com%2F20100120%2F3641224_180653657501_2.jpg" alt="">
-								<div class="portfolio-caption">
-									<h4>web design</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- END SINGLE WORK DESIGN AREA -->
-					<!-- START SINGLE WORK DESIGN AREA -->
-					<div class="four columns mix development photography">
-						<div class="item wow fadeInUp" data-wow-delay="0.8s">
-							<a href="assets/images/portfolio/4.jpg">
-								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554961965114&di=2eec4b19d7f955cb800b048ea0b3635d&imgtype=0&src=http%3A%2F%2Fpic3.40017.cn%2Fscenery%2Fdestination%2F2015%2F05%2F12%2F15%2F5u12Wh.jpg" alt="">
-								<div class="portfolio-caption">
-									<h4>web design</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- END SINGLE WORK DESIGN AREA -->
-					<!-- START SINGLE WORK DESIGN AREA -->
-					<div class="four columns mix typography web">
-						<div class="item wow fadeInUp" data-wow-delay="1s">
-							<a href="assets/images/portfolio/5.jpg">
-								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554961965115&di=9112dd070d0a4e1b029a0b84d3cc045e&imgtype=0&src=http%3A%2F%2Fpic67.nipic.com%2Ffile%2F20150515%2F9448607_221818217002_2.jpg" alt="">
-								<div class="portfolio-caption">
-									<h4>web design</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- END SINGLE WORK DESIGN AREA -->
-					<!-- START SINGLE WORK DESIGN AREA -->
-					<div class="four columns mix webdesign development photography">
-						<div class="item wow fadeInUp" data-wow-delay="1.2s">
-							<a href="assets/images/portfolio/6.jpg">
-								<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554961965115&di=38fac7b6d1e75f357f6c967b6840e935&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2Ftg%2F369%2F480%2F749%2Ffb6e6b1f88154a838a9197531ac1deb9.jpg" alt="">
-								<div class="portfolio-caption">
-									<h4>web design</h4>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- END SINGLE WORK DESIGN AREA -->
 				</div>
 			</div>
+			<div class="row">
+				<a href="https://xlong.zcool.com.cn" target="_blank" class="more-work wow fadeInUp">
+					更多作品<span class="iconfont ic-arrowrightl arrow"></span>
+				</a>
+			</div>			
 		</div>
 	</section>
 </template>
+
+<script>	
+	export default {
+		data() {
+			return {
+				work: [
+					{
+						tag: 'design',
+						wowDelay: '0.1',
+						url: 'https://mp.weixin.qq.com/s/RUEZG9__2FW8u9-v2Sgt2g',
+						imgUrl: require("@/assets/picture/7.jpg"),
+						title: '2018年度字体设计'
+					},
+					{
+						tag: 'development',
+						wowDelay: '0.2',
+						url: 'https://www.zhujia100.com',
+						imgUrl: require("@/assets/picture/1.jpg"),
+						title: '建筑综合信息服务平台——筑加网'
+					},
+					{
+						tag: 'design',
+						wowDelay: '0.3',
+						url: 'https://mp.weixin.qq.com/s/RUEZG9__2FW8u9-v2Sgt2g',
+						imgUrl: require("@/assets/picture/8.jpg"),
+						title: '微信表情 | 弈百'
+					},
+					{
+						tag: 'development',
+						wowDelay: '0.4',
+						url: 'http://www.geese.com.cn/',
+						imgUrl: require("@/assets/picture/2.jpg"),
+						title: '纺织行业企业信息化解决方案'
+					},
+					
+					{
+						tag: 'design',
+						wowDelay: '0.5',
+						url: 'https://www.zcool.com.cn/work/ZMTg0NTY0ODA=.html',
+						imgUrl: require("@/assets/picture/9.jpg"),
+						title: '微信表情 | 小熊GO'
+					},
+					{
+						tag: 'course',
+						wowDelay: '0.6',
+						url: 'https://mp.weixin.qq.com/s/1hlaAmtfH6tBLStMR-5mcw',
+						imgUrl: require("@/assets/picture/4.jpg"),
+						title: '渐变透明图形设计'
+					},
+					{
+						tag: 'design',
+						wowDelay: '0.7',
+						url: 'https://www.zcool.com.cn/work/ZMTg0NTY0ODA=.html',
+						imgUrl: require("@/assets/picture/3.jpg"),
+						title: '人工智能分析计算平台——天知心，大数智'
+					},
+					{
+						tag: 'development',
+						wowDelay: '0.8',
+						url: 'http://www.lumiatech.com',
+						imgUrl: require("@/assets/picture/6.jpg"),
+						title: 'Lumiatech Lighting'
+					},
+					{
+						tag: 'course',
+						wowDelay: '0.9',
+						url: 'https://mp.weixin.qq.com/s/zjC24ACEyOMbPQRVL0FFpA',
+						imgUrl: require("@/assets/picture/5.jpg"),
+						title: '如何制作游戏宣传图'
+					}
+					
+				]
+			}
+		}
+	};
+</script>
 
 <style scoped lang="less">
 	// 引入通用配置文件
 	@import "../assets/less/color";
 	#portfolio {
-		background: url(../assets/images/1.jpg) no-repeat fixed center center / cover;
+		background: url(../assets/images/cover.jpg) no-repeat fixed center center / cover;
 		h1 {
 			letter-spacing: 1px;
 			margin-bottom: 60px;
@@ -125,7 +143,7 @@
 				-webkit-transition: all 0.4s ease-out;
 				transition: all 0.4s ease-out;
 				h4 {
-					margin-top: 100px;
+					margin-top: 150px;
 					-webkit-transition: .3s;
 					transition: .3s;
 				}
@@ -137,9 +155,46 @@
 			}
 		}
 	}
-	
+
 	.work-inner .mix {
 		display: none;
+	}
+
+	.more-work{
+		display: block;
+		position: relative;
+		color: #EBEEEE;
+		border: 1px solid #666;
+		margin-bottom: 60px;
+		font-family: "Open Sans", sans-serif;
+		font-size: 18px;
+		letter-spacing: 3px;
+		margin: 0px auto;
+		margin-top: 50px;
+		max-width: 200px;
+		padding: 10px;
+		text-align: center;
+		transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		-o-transition: all 0.3s;
+
+		&:hover{
+			border-color: @base_color; 
+		}
+
+		.arrow{
+			position: absolute;
+			right: 10px;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		.more-work{
+			font-size: 14px;
+			width: 150px;
+		}
 	}
 	
 	ul.work {

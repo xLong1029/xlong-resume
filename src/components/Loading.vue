@@ -9,6 +9,9 @@
 </template>
 
 <style scoped lang="less">
+	// 引入通用配置文件
+	@import "../assets/less/color";
+
 	#loading {
 		background: #000;
 		height: 100%;
@@ -44,7 +47,7 @@
 		margin-right: auto;
 		margin-left: auto;
 		margin-top: 60px;
-		border: 3px dashed #fff;
+		border: 3px dashed @base_color;
 	}
 	
 	@-webkit-keyframes animate {

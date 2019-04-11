@@ -4,19 +4,19 @@
 			<div class="twelve columns">
 				<h1 class="section-title wow fadeInDown">联系方式 / Contact</h1>
 			</div>
-			<div class="three columns contact-details">
+			<div class="three columns contact-details wow fadeInUp">
 				<span class="iconfont ic-map"></span>
 				<p>广西壮族自治区 南宁市 西乡塘区 衡阳路 西一里</p>
 			</div>
-			<div class="three columns contact-details">
+			<div class="three columns contact-details wow fadeInUp">
 				<span class="iconfont ic-phone1"></span>
 				<p>18376686974</p>
 			</div>
-			<div class="three columns contact-details">
+			<div class="three columns contact-details wow fadeInUp">
 				<span class="iconfont ic-email"></span>
 				<p>381612175@qq.com</p>
 			</div>
-			<div class="three columns contact-details" style="text-align: center;">
+			<div class="three columns contact-details wow fadeInUp" style="text-align: center;">
 				<img class="qrcode" :src="qrcode"/>
 				<div>扫一扫 关注我</div>
 			</div>
@@ -26,12 +26,11 @@
 
 <script>
 	export default {
-		props: {
-			qrcode: {
-                type: String,
-				default: require("@/assets/images/default.jpg")
+		data() {
+			return {
+				qrcode: require("@/assets/images/qrcode.jpg"),
 			}
-        }
+		}
 	};
 </script>
 
@@ -82,7 +81,5 @@
 			font-weight: 900;
 		}
 	}
-
-	.qrcode{}
 </style>
 

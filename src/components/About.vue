@@ -37,9 +37,28 @@
 					<div class="arrow-left"></div>
 	
 					<p>
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-						sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-						incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+						Hi，我是罗永梅，网络别名：xLong / xLong1029。
+					</p>
+					<p>
+						我是一个Web前端开发工程师，业余爱好字体设计。我学习能力强，喜欢挑战，工作负责，善于分析总结，善于沟通，对新技术有前瞻性。
+					</p>
+					<p>
+						我熟悉HTML、CSS、JavasScript/jQuery等前端技术；
+					</p>
+					<p>
+						熟悉Bootstrap、Vue.js、Egg.js等前端框架；
+					</p>
+					<p>
+						熟悉MVVM、MVC模式开发，倾向于前后端分离的开发模式；
+					</p>
+					<p>
+						熟练运用Svn、Git进行版本控制；
+					</p>
+					<p>
+						了解Sql Server、SQLite等数据库，了解微信小程序开发；
+					</p>
+					<p style="color:#56AD48;">
+						* 能独立完成一个小型项目开发，包括但不限于PC页面、WebApp、企业CMS等开发。 
 					</p>
 	
 					<div class="row">
@@ -76,7 +95,7 @@
 	@import "../assets/less/color";
 	
 	#about {
-		background: url(../assets/images/1.jpg) no-repeat fixed center center / cover;
+		background: url(../assets/images/cover.jpg) no-repeat fixed center center / cover;
 		overflow: hidden;
 
 		a {
@@ -118,8 +137,10 @@
 		}
 
 		p {
+			// text-align: center;
 			line-height: 30px;
 			color: #fff;
+			margin-bottom: 15px;
 		}
 
 		.profile-pic {
@@ -177,7 +198,7 @@
 		}
 
 		.main-col {
-			background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+			background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
 			height: 580px;
 			padding: 50px;
 		}
@@ -192,7 +213,7 @@
 	
 	.arrow-left {
 		border-bottom: 25px solid transparent;
-		border-right: 25px solid rgba(0, 0, 0, 0.5);
+		border-right: 25px solid rgba(0, 0, 0, 0.7);
 		border-top: 25px solid transparent;
 		height: 0;
 		left: -25px;
