@@ -3,7 +3,19 @@
 /* ------------------------------------------------------------------ */
 /* a. Webfonts and Icon fonts
  ------------------------------------------------------------------ */
- @import url("font-awesome.min.css");
+ @font-face {
+   font-family: 'iconfont';  /* project id 1135623 */
+   src: url('//at.alicdn.com/t/font_1135623_775hrotlx4t.eot');
+   src: url('//at.alicdn.com/t/font_1135623_775hrotlx4t.eot?#iefix') format('embedded-opentype'),
+   url('//at.alicdn.com/t/font_1135623_775hrotlx4t.woff2') format('woff2'),
+   url('//at.alicdn.com/t/font_1135623_775hrotlx4t.woff') format('woff'),
+   url('//at.alicdn.com/t/font_1135623_775hrotlx4t.ttf') format('truetype'),
+   url('//at.alicdn.com/t/font_1135623_775hrotlx4t.svg#iconfont') format('svg');
+ }
+
+ .iconfont{
+    font-size: inherit;
+ }
  
  /* ------------------------------------------------------------------
  /* b. Reset
@@ -575,8 +587,8 @@
  /* default
  --------------------------------------------------------------- */
  .row {
-    width: 96%;
-    max-width: 1020px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
  }
  /* fixed width for IE8 */

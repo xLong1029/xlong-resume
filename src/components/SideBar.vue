@@ -13,22 +13,22 @@
 		<ul id="nav" class="nav">
 			<li>
 				<a class="smoothscroll" href="#about">
-					<i class="fa fa-user fa-fw"></i>个人介绍
+					<i class="iconfont ic-icon35"></i>个人介绍
 				</a>
 			</li>
 			<li>
 				<a class="smoothscroll" href="#resume">
-					<i class="fa fa-file-text fa-fw"></i>简历详情
+					<i class="iconfont ic-file-text"></i>简历详情
 				</a>
 			</li>
 			<li>
 				<a class="smoothscroll" href="#portfolio">
-					<i class="fa fa-briefcase fa-fw"></i>作品集
+					<i class="iconfont ic-gongzuojingyan"></i>作品集
 				</a>
 			</li>
 			<li>
 				<a class="smoothscroll" href="#contact">
-					<i class="fa fa-envelope fa-fw"></i>联系方式
+					<i class="iconfont ic-email1"></i>联系方式
 				</a>
 			</li>
 		</ul>
@@ -41,7 +41,7 @@
 		props: {
 			avatar:{
                 type: String,
-				default: require("@/assets/images/avatar.jpg")
+				default: require("@/assets/images/default.jpg")
             }
         }
 	};
@@ -55,9 +55,7 @@
 		height: 100px;
 		margin: 25px auto;
 		img {
-			border: 5px solid #b1b2b4;
 			border-radius: 50%;
-			box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
 			height: auto;
 			width: 100%;
 		}

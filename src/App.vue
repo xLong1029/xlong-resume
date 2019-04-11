@@ -11,7 +11,7 @@
 		<!-- 个人作品集 -->
 		<Portfolio />
 		<!-- 联系方式 -->
-		<Contact />
+		<Contact :qrcode="qrcode" />
 		<!-- 底部 -->
 		<Footer />
 	</div>
@@ -41,6 +41,7 @@
 		data() {
 			return {
 				avatar: require("@/assets/images/avatar.jpg"),
+				qrcode: require("@/assets/images/qrcode.jpg"),
 			}
 		},
 		created() {

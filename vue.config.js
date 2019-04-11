@@ -22,7 +22,7 @@ module.exports = {
     //默认情况下，生成的静态资源在它们的文件名中包含了 hash 以便更好的控制缓存。你可以通过将这个选项设为 false 来关闭文件名哈希。(false的时候就是让原来的文件名不改变)
     filenameHashing: false,
     // 生产环境是否生成 sourceMap 文件，将此设置为false不输出map文件可以加速生产构建
-    productionSourceMap: true,
+    productionSourceMap: false,
     // css相关配置
     css: {
         // 是否使用 css 分离插件，采用独立样式文件载入，不采用<style>方式内联至html文件中

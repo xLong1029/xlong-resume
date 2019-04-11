@@ -5,12 +5,22 @@
 				<ul class="social-links">
 					<li>
 						<a href="http://wpa.qq.com/msgrd?v=3&uin=381612175&site=qq&menu=yes">
-							<i class="fa fa-qq"></i>
+							<i class="iconfont ic-qq"></i>
 						</a>
 					</li>
 					<li>
-						<a href="tel:18376686974">
-							<i class="fa fa-phone"></i>
+						<a href="https://github.com/xLong1029" target="_blank">
+							<i class="iconfont ic-githubb"></i>
+						</a>
+					</li>
+					<li>
+						<a href="http://xlong.zcool.com.cn" target="_blank">
+							<i class="iconfont ic-zcool"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://i.ui.cn/ucenter/358591.html" target="_blank">
+							<i class="iconfont ic-uicn"></i>
 						</a>
 					</li>
 				</ul>
@@ -22,7 +32,7 @@
 	
 			<div id="go-top">
 				<a class="smoothscroll" title="Back to Top" href="#about">
-					<i class="fa fa-chevron-up"></i>
+					<i class="iconfont ic-arrowup"></i>
 				</a>
 			</div>
 		</div>
@@ -30,8 +40,10 @@
 </template>
 
 <style scoped lang="less">
+	// 引入通用配置文件
+	@import "../assets/less/color";
 	footer {
-		padding-top: 48px;
+		padding-top: 25px;
 		margin-bottom: 48px;
 		color: #303030;
 		font-size: 14px;
@@ -40,8 +52,8 @@
 
 		a{
 			color: #525252;
-			&:visited {
-				color: #525252;
+			&:hover {
+				color: @base_color;
 			}
 		}
 
@@ -96,7 +108,7 @@
 	
 	#go-top {
 		position: absolute;
-		top: -24px;
+		top: -30px;
 		left: 50%;
 		margin-left: -30px;
 
@@ -107,19 +119,18 @@
 			width: 60px;
 			height: 60px;
 			background-color: #525252;
-			box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
 			-webkit-transition: all 0.2s ease-in-out;
 			-moz-transition: all 0.2s ease-in-out;
 			-o-transition: all 0.2s ease-in-out;
 			-ms-transition: all 0.2s ease-in-out;
 			transition: all 0.2s ease-in-out;
 			color: #fff;
-			font-size: 21px;
+			font-size: 24px;
 			line-height: 60px;
 			border-radius: 100%;
 
 			&:hover {
-				background-color: #0F9095;
+				background-color: @base_color;
 			}
 		}
 	}

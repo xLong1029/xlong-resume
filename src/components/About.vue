@@ -13,13 +13,18 @@
 						<div class="row social-container">
 							<ul class="social">
 								<li>
-									<a href="http://wpa.qq.com/msgrd?v=3&uin=381612175&site=qq&menu=yes">
-										<i class="fa fa-qq"></i>
+									<a href="https://github.com/xLong1029" target="_blank">
+										<i class="iconfont ic-githubb"></i>
 									</a>
 								</li>
 								<li>
-									<a href="https://github.com/xLong1029" target="_blank">
-										<i class="fa fa-github"></i>
+									<a href="http://xlong.zcool.com.cn" target="_blank">
+										<i class="iconfont ic-zcool"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://i.ui.cn/ucenter/358591.html" target="_blank">
+										<i class="iconfont ic-uicn"></i>
 									</a>
 								</li>
 							</ul>
@@ -39,14 +44,12 @@
 	
 					<div class="row">
 						<div class="six columns download">
-							<p>
-								<a href="#contact" class="button">
-									<i class="fa fa-phone"></i>与我联系
-								</a>
-								<a href="resume.pdf" class="button" target="_blank">
-									<i class="fa fa-download"></i>下载纸质简历
-								</a>
-							</p>
+							<a href="#contact" class="button">
+								<i class="iconfont ic-phone"></i>与我联系
+							</a>
+							<a href="resume.pdf" class="button" target="_blank">
+								<i class="iconfont ic-download-f"></i>下载简历
+							</a>
 						</div>
 						<!-- Download Buttons -->
 					</div>
@@ -62,8 +65,8 @@
 		props: {
 			avatar: {
                 type: String,
-				default: require("@/assets/images/avatar.jpg")
-			}		
+				default: require("@/assets/images/default.jpg")
+			}
         }
 	};
 </script>
@@ -120,7 +123,6 @@
 		}
 
 		.profile-pic {
-			border: 5px solid #b1b2b4;
 			border-radius: 100%;
 			box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
 			height: auto;
@@ -170,13 +172,13 @@
 
 		.bio-left {
 			background: rgba(0, 0, 0, 0.2);
-			height: 500px;
+			height: 580px;
 			padding: 60px 30px;
 		}
 
 		.main-col {
 			background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
-			height: 500px;
+			height: 580px;
 			padding: 50px;
 		}
 	}
@@ -217,7 +219,7 @@
 		width: 85%;
 		text-align: center;
 		.social {
-			// margin: 24px 0;
+			margin: 0;
 			padding: 0;
 			font-size: 30px;
 			text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);

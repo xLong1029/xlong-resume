@@ -224,10 +224,8 @@
 		}
 	}
 	
-	.education,
 	.work,
-	.skill,
-	.awards {
+	.skill {
 		margin-bottom: 48px;
 		padding-bottom: 24px;
 		border-bottom: 1px solid #e8e8e8;
@@ -414,7 +412,7 @@
 	}
 	
 	.html5 {
-		background: #e74c3c;
+		background: #f26f3d;
 		width: 95%;
 		-moz-animation: html5 2s ease;
 		-webkit-animation: html5 2s ease;

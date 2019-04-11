@@ -19,7 +19,7 @@ TOC :
   #about .download {
     float: none;
     margin-top: 0;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
   }
 
@@ -231,9 +231,7 @@ TOC :
    ----------------------------------------------------------------------- */
    #contact .section-head { margin-bottom: 12px; }
    #contact .section-head h1 {
-      /* font: 16px/24px 'Open Sans', sans-serif;             */
       text-align: center;   
-      margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
    }  
    #contact h1 span { display: block; }
@@ -258,6 +256,10 @@ TOC :
       margin-left: 0;
    }
 
+   .contact-details {
+      text-align: center;
+   }
+
 
    /* footer
    ------------------------------------------------------------------------ */
@@ -279,7 +281,6 @@ TOC :
       line-height: 54px;
    }
 
-
 }
 
 /* mobile narrow
@@ -300,7 +301,7 @@ TOC :
    /* About
   ------------------------------------------------------------------------ */
    #social {
-     height: 80px;
+     /* height: 80px; */
      width: 100%;
    }
    
