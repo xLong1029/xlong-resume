@@ -43,10 +43,13 @@
 						我是一个Web前端开发工程师，业余爱好字体设计。我学习能力强，喜欢挑战，工作负责，善于分析总结，善于沟通，对新技术有前瞻性。
 					</p>
 					<p>
-						我熟悉HTML、CSS、JavasScript/jQuery等前端技术；
+						我精通HTML、CSS、JavasScript/jQuery等前端技术；
 					</p>
 					<p>
-						熟悉Bootstrap、Vue.js、Egg.js等前端框架；
+						熟悉但不限于Bootstrap、Vue.、Egg等前端框架；
+					</p>
+					<p>
+						擅长使用Element、Vant、iView、Mint等UI框架；
 					</p>
 					<p>
 						熟悉MVVM、MVC模式开发，倾向于前后端分离的开发模式；
@@ -56,9 +59,6 @@
 					</p>
 					<p>
 						了解Sql Server、SQLite等数据库，了解微信小程序开发；
-					</p>
-					<p style="color:#56AD48;">
-						* 能独立完成一个小型项目开发，包括但不限于PC页面、WebApp、企业CMS等开发。 
 					</p>
 	
 					<div class="row">

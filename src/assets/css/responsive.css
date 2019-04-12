@@ -306,16 +306,11 @@ TOC :
    /* About
   ------------------------------------------------------------------------ */
    #social {
-     /* height: 80px; */
      width: 100%;
    }
    
    .social-container {
      width: 100%;
-   }
-   
-   .social-container .social {
-     font-size: 20px;
    }
 
    .social-container .social li {
