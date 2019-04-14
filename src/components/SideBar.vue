@@ -32,7 +32,6 @@
 				</a>
 			</li>
 		</ul>
-		<!-- end #nav -->
 	</nav>
 </template>
 

@@ -23,9 +23,7 @@
 						</li>
 					</ul>
 				</div>
-				<!-- Work Timeline End -->
 			</div>
-			<!-- main-col end -->
 		</div>
 		<!-- End Work -->
 	
@@ -67,9 +65,7 @@
 						</li>
 					</ul>
 				</div>
-				<!-- end skill-bars -->
 			</div>
-			<!-- main-col end -->
 		</div>
 		<!-- End skills -->
 
@@ -86,7 +82,6 @@
 					2014年毕业于 国立华侨大学 计算机科学与技术（数字媒体技术方向） 本科专业
 				</p>
 			</div>
-			<!-- main-col end -->
 		</div>
 	
 		<!-- Awards -->
@@ -125,9 +120,7 @@
 						</li>
 					</ul>
 				</div>
-				<!-- end awards list -->
 			</div>
-			<!-- main-col end -->
 		</div>
 		<!-- End skills -->
 	</section>

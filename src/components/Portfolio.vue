@@ -11,7 +11,6 @@
 					<li class="filter" data-filter="all">全部</li>
 					<li class="filter" data-filter=".development">开发</li>
 					<li class="filter" data-filter=".design">设计</li>
-					<li class="filter" data-filter=".course">教程</li>
 				</ul>
 			</div>
 			<div class="row">
@@ -43,6 +42,13 @@
 			return {
 				work: [
 					{
+						tag: 'development',
+						wowDelay: '0.3',
+						url: 'https://github.com/xLong1029/xlong-website-cms',
+						imgUrl: require("@/assets/picture/8.jpg"),
+						title: '企业一站式解决方案'
+					},
+					{
 						tag: 'design',
 						wowDelay: '0.1',
 						url: 'https://mp.weixin.qq.com/s/RUEZG9__2FW8u9-v2Sgt2g',
@@ -57,33 +63,18 @@
 						title: '建筑综合信息服务平台——筑加网'
 					},
 					{
-						tag: 'design',
-						wowDelay: '0.3',
-						url: 'https://mp.weixin.qq.com/s/RUEZG9__2FW8u9-v2Sgt2g',
-						imgUrl: require("@/assets/picture/8.jpg"),
-						title: '微信表情 | 弈百'
-					},
-					{
-						tag: 'development',
+						tag: 'development design',
 						wowDelay: '0.4',
 						url: 'http://www.geese.com.cn/',
 						imgUrl: require("@/assets/picture/2.jpg"),
 						title: '纺织行业企业信息化解决方案'
 					},
-					
 					{
-						tag: 'design',
+						tag: 'development',
 						wowDelay: '0.5',
-						url: 'https://www.zcool.com.cn/work/ZMTg0NTY0ODA=.html',
+						url: 'https://xmxx.zhujia100.com/#/ProjectNews',
 						imgUrl: require("@/assets/picture/9.jpg"),
-						title: '微信表情 | 小熊GO'
-					},
-					{
-						tag: 'course',
-						wowDelay: '0.6',
-						url: 'https://mp.weixin.qq.com/s/1hlaAmtfH6tBLStMR-5mcw',
-						imgUrl: require("@/assets/picture/4.jpg"),
-						title: '渐变透明图形设计'
+						title: '项目申报资讯平台'
 					},
 					{
 						tag: 'design',
@@ -91,20 +82,6 @@
 						url: 'https://www.zcool.com.cn/work/ZMTg0NTY0ODA=.html',
 						imgUrl: require("@/assets/picture/3.jpg"),
 						title: '人工智能分析计算平台——天知心，大数智'
-					},
-					{
-						tag: 'development',
-						wowDelay: '0.8',
-						url: 'http://www.lumiatech.com',
-						imgUrl: require("@/assets/picture/6.jpg"),
-						title: 'Lumiatech Lighting'
-					},
-					{
-						tag: 'course',
-						wowDelay: '0.9',
-						url: 'https://mp.weixin.qq.com/s/zjC24ACEyOMbPQRVL0FFpA',
-						imgUrl: require("@/assets/picture/5.jpg"),
-						title: '如何制作游戏宣传图'
 					}
 					
 				]

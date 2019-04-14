@@ -70,10 +70,8 @@
 								<i class="iconfont ic-download-f"></i>下载简历
 							</a>
 						</div>
-						<!-- Download Buttons -->
 					</div>
 				</div>
-				<!-- end .main-col -->
 			</div>
 		</div>
 	</section>
