@@ -16,3 +16,7 @@ H5响应式个人简历
 
 ### 项目打包
 > npm run build
+
+### BUG 修复
+1. jquery.nicescroll.js 引发的 [Intervention] Unable to preventDefault inside passive event listener due to target being treated as passive.
+issue地址： https://github.com/inuyaksa/jquery.nicescroll/issues/799
