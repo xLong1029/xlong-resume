@@ -46,10 +46,10 @@
 						我精通HTML、CSS、JavasScript/jQuery等前端技术；
 					</p>
 					<p>
-						熟悉但不限于Bootstrap、Vue.、Egg等前端框架；
+						熟悉但不限于Bootstrap、Vue.、Egg、Angular等前端框架；
 					</p>
 					<p>
-						擅长使用Element、Vant、iView、Mint等UI框架；
+						擅长使用Element、Vant、iView、Ant Design等UI框架；
 					</p>
 					<p>
 						熟悉MVVM、MVC模式开发，倾向于前后端分离的开发模式；
