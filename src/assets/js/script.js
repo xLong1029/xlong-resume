@@ -22,11 +22,11 @@ jQuery(document).ready(function ($) {
   /* Initializing jQuery Nice Scroll
   ------------------------------------------------------ */
 
-  $("html").niceScroll({
-    cursorcolor: "#56AD48", // Set cursor color
-    cursorwidth: "8", // Sety cursor width
-    cursorborder: "" // Set cursor border color, default left none
-  });
+  // $("html").niceScroll({
+  //   cursorcolor: "#56AD48", // Set cursor color
+  //   cursorwidth: "8", // Sety cursor width
+  //   cursorborder: "" // Set cursor border color, default left none
+  // });
 
   /*----------------------------------------------------*/
   /* Smooth Scrolling
